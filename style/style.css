@@ -78,6 +78,97 @@ header .icons #men {
     display: none;
 }
 
+
+
+.card {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 400px;
+    background-color: #333;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 100;
+    margin-left: 100px;
+}
+
+.active .card {
+    left: calc(100% - 500px);
+}
+
+.active .container {
+    transform: translateX(-200px);
+}
+
+.card h1 {
+    color: #cdaa7c;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.card .checkOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkOut div {
+    background-color: #cdaa7c;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.card .checkOut div:nth-child(2) {
+    background-color: #1c1f25;
+    color: #cdaa7c;
+}
+
+.listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #ffffff;
+    row-gap: 10px;
+}
+
+.listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCard li img {
+    width: 90%;
+}
+
+.listCard li button {
+    background-color: #fff5;
+    border: none;
+    width: 20px;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.listCard .count {
+    margin: 0 10px;
+}
+
+
+
 .home .home-slider .slide {
     display: flex;
     align-items: center;
@@ -526,105 +617,6 @@ section {
     background-color: #cdaa7c;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.card {
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 400px;
-    background-color: #333;
-    height: 100vh;
-    transition: 0.5s;
-    z-index: 100;
-    margin-left: 100px;
-}
-
-.active .card {
-    left: calc(100% - 500px);
-}
-
-.active .container {
-    transform: translateX(-200px);
-}
-
-.card h1 {
-    color: #cdaa7c;
-    font-weight: 100;
-    margin: 0;
-    padding: 0 20px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-}
-
-.card .checkOut {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.card .checkOut div {
-    background-color: #cdaa7c;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    cursor: pointer;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
-    font-size: 18px;
-}
-
-.card .checkOut div:nth-child(2) {
-    background-color: #1c1f25;
-    color: #cdaa7c;
-}
-
-.listCard li {
-    display: grid;
-    grid-template-columns: 100px repeat(3, 1fr);
-    color: #ffffff;
-    row-gap: 10px;
-}
-
-.listCard li div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.listCard li img {
-    width: 90%;
-}
-
-.listCard li button {
-    background-color: #fff5;
-    border: none;
-    width: 20px;
-    font-size: 20px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.listCard .count {
-    margin: 0 10px;
-}
 
 
 
