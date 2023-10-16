@@ -583,6 +583,11 @@ section {
     padding: .5rem .8rem;
     background-color: transparent;
     border-radius: 20px;
+    color: #b2b2b2;
+}
+
+.footer .container input[data] {
+    background-color: #b9b6b6;
 }
 
 .footer .container ul {
