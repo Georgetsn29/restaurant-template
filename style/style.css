@@ -53,7 +53,7 @@ header .navbar a {
 header .navbar a.active,
 header .navbar a.active:hover {
     color: #ffffff;
-    border: .1rem solid rgba(205, 170, 124, 0.2);
+    border-block: .2rem solid rgba(205, 170, 124, 0.2);
 }
 
 header .icons ion-icon {
@@ -71,7 +71,7 @@ header .icons ion-icon {
 header .icons ion-icon:hover {
     color: #ffffff;
     background-color: var(--light-color);
-    transform: rotate(360deg);
+    transform: rotateY(180deg);
 }
 
 header .icons #men {
