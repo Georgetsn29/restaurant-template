@@ -10,6 +10,10 @@ openShopping.addEventListener('click', ()=> {
     body.classList.add('active')
 })
 
+openShopping.addEventListener('dblclick', ()=> {
+    body.classList.remove('active')
+})
+
 closeShopping.addEventListener('click', ()=> {
     body.classList.remove('active')
 })
